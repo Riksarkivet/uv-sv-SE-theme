@@ -1,4 +1,5 @@
 @theme-img-path: '../../../themes/@{theme}/img/';
+@headerLinkColor: #000;
 
 #app{
     .headerPanel{
@@ -37,10 +38,10 @@
             
             .rightOptions{
                 a{
-                    color: #000;
+                    color: @headerLinkColor !important;
                     
                     &:link, &:visited, &:hover, &:active {
-                        color: #000;
+                        color: @headerLinkColor !important;
                     }
                 }
             }
