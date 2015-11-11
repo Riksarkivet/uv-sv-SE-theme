@@ -23,7 +23,7 @@
         }
         
         a.imageBtn{
-            background-color: #0B151F !important;
+            background-color: @riksarkivet-button-color !important;
             background-position: center center !important;
             width: 40px;
             height: 30px;
@@ -36,11 +36,22 @@
                 .prevOptions {
                     margin-right: 5px;
                 }
+                
+                .image-dropdown-options {
+                    height: 30px;
+                    overflow: hidden;
+                    background: url('@{theme-img-path}select.png') no-repeat right @riksarkivet-button-color;
+                }
  
                 .image-dropdown {
+                    height: 30px;
                     padding: 0 7px 0 7px;
+                    margin: 10px;
                     font-size: 15px;
                     border-width: 0;
+                    border-radius: 0;
+                    background: transparent;
+                    -webkit-appearance: none;
                 }
                 
                 .nextOptions {
