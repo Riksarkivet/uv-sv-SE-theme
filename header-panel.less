@@ -40,13 +40,16 @@
                 .image-dropdown-options {
                     height: 30px;
                     overflow: hidden;
-                    background: url('@{theme-img-path}select.png') no-repeat right @riksarkivet-button-color;
+                    background-color: @riksarkivet-button-color;
+                    background-image: url('@{theme-img-path}select.png');
+                    background-repeat: no-repeat;
+                    background-position: right 5px center;
                 }
  
                 .image-dropdown {
                     height: 30px;
-                    padding: 0 7px 0 7px;
-                    margin: 10px;
+                    padding: 0 15px 0 7px;
+                    // margin: 10px;
                     font-size: 15px;
                     border-width: 0;
                     border-radius: 0;
