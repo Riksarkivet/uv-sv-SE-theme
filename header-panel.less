@@ -55,6 +55,22 @@
                     &:link, &:visited, &:hover, &:active {
                         color: @headerLinkColor !important;
                     }
+                    
+                    &.settings{
+                        .icon-left(url('@{theme-img-path}settings.png'), 30px, 27px);
+                    }
+
+                    &.download{
+                        .icon-left(url('@{theme-img-path}download.png'), 30px, 27px);
+                    }
+
+                    &.fullScreen{
+                        .icon-left(url('@{theme-img-path}fullscreen.png'), 30px, 27px);
+                    }
+
+                    &.exitFullscreen{
+                        .icon-left(url('@{theme-img-path}exit_fullscreen.png'), 30px, 27px);
+                    }
                 }
             }
         }
