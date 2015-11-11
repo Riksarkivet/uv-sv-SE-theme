@@ -56,11 +56,18 @@
                     border-radius: 0;
                     background: transparent;
                     -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -o-appearance: none;
+                    -ie-appearance: none; 
                     
                     option {
                         background-color: @riksarkivet-button-color;
                         color: @text-color;
                     }
+                }
+                
+                select::-ms-expand{
+                    display:none;
                 }
                 
                 .nextOptions {
