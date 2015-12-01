@@ -3,7 +3,7 @@
 
 #app{
     .headerPanel{
-        background-color: #F2B600;
+        background-color: @riksarkivet-header-color;
         height: 48px;
         
         background-image: url("@{theme-img-path}logo.png");
@@ -23,7 +23,7 @@
         }
         
         a.imageBtn{
-            background-color: #F2B600 !important;
+            background-color: @riksarkivet-header-color !important;
             background-position: center center !important;
             width: 40px;
             height: 30px;
@@ -40,7 +40,6 @@
                 .image-dropdown-options {
                     height: 30px;
                     overflow: hidden;
-                    // background-color: @riksarkivet-button-color;
                     background-image: url('@{theme-img-path}select.png');
                     background-repeat: no-repeat;
                     background-position: right 5px center;
@@ -116,4 +115,21 @@
             }
         }
     }
+}
+
+
+#app.browser-Explorer.browser-version-8 {
+    .headerPanel{
+        .options{
+            .centerOptions{
+                .image-dropdown-options {
+                    height: 30px;
+                    background-color: @riksarkivet-header-color;
+                    background-image: none;
+                    border: none;
+                    border-width: 0;
+                }
+            }
+        }
+    } 
 }
