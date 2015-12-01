@@ -23,7 +23,7 @@
         }
         
         a.imageBtn{
-            background-color: @riksarkivet-button-color !important;
+            background-color: #F2B600 !important;
             background-position: center center !important;
             width: 40px;
             height: 30px;
@@ -40,20 +40,23 @@
                 .image-dropdown-options {
                     height: 30px;
                     overflow: hidden;
-                    background-color: @riksarkivet-button-color;
+                    // background-color: @riksarkivet-button-color;
                     background-image: url('@{theme-img-path}select.png');
                     background-repeat: no-repeat;
                     background-position: right 5px center;
+                    border: 1px solid #000;
+                    border-width: 0 2px 0 2px;
                 }
  
                 .image-dropdown {
                     height: 30px;
                     max-width: 200px; 
-                    padding: 0 30px 0 10px;
+                    padding: 0 25px 0 2px;
                     font-size: 15px;
-                    color: @text-color;
+                    color: #000;
                     border-width: 0;
                     border-radius: 0;
+                    cursor: pointer;
                     background: transparent;
                     -webkit-appearance: none;
                     -moz-appearance: none;
@@ -61,8 +64,8 @@
                     -ie-appearance: none;
                     
                     option {
-                        background-color: @riksarkivet-button-color;
-                        color: @text-color;
+                        background-color: #fff;
+                        color: #000;
                     }
                 }
                 
@@ -104,6 +107,10 @@
 
                     &.exitFullscreen{
                         .riksarkivet-header-icon(url('@{theme-img-path}exit_fullscreen.png'), 45px, 40px);
+                    }
+                    &.linkOldImageViewer{
+                        margin-top: 12px;
+                        text-decoration: underline;
                     }
                 }
             }
