@@ -11,6 +11,11 @@
         background-position: -2px -5px;
         background-size: 140px;
         
+        @media (max-width: 500px) { 
+            background-image: url("../../img/logo.png");
+            background-size: 40px auto;
+        }
+        
         .headerBorder {
             display: block;
             background-image: url('@{theme-img-path}body-header-colorbar.jpg');
@@ -35,9 +40,20 @@
         .options{
             .centerOptions{
                 width: auto;
+
+                @media (max-width: 500px) { 
+                    left: 40px !important;
+                }
+                
+                @media (min-width: 501px) and (max-width: 800px) {
+                    left: 140px !important;
+                }
                 
                 .prevOptions {
                     margin-right: 5px;
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
                 }
                 
                 .image-dropdown-options {
@@ -78,12 +94,19 @@
                 
                 .nextOptions {
                     margin-left: 5px;
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
                 }
             }
             
             .rightOptions{
                 margin: 0 15px 0 0;
                     
+                @media (max-width: 400px) {
+                    display: none;
+                }
+                
                 a{
                     margin-right: 0;
                     color: @headerLinkColor !important;
