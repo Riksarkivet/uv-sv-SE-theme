@@ -2,7 +2,19 @@
     .leftPanel{
         .views{
             .treeView{
-                font-size: 14px;
+			    @media (max-width: 580px)
+			    {
+    			    .tree > li{
+		                margin-bottom: 10px;
+		                font-size: 18px;
+			        }
+		        }
+			    @media (min-width: 581px)
+			    {
+    			    .tree > li{
+		                font-size: 14px;
+			        }
+		        }                    		
             }
         }
     }
