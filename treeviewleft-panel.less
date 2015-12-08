@@ -1,5 +1,18 @@
 #app {
     .leftPanel{
+        .top{
+            .title{
+			    @media (max-device-width: 768px) and (min-device-width: 581px)
+			    {
+    			    font-size: 12px;
+		        }
+			    @media (max-device-width: 581px)
+			    {
+    			    font-size: 16px;
+		        }
+            }
+
+        }
         .views{
             .treeView{
                 background: #192533;
