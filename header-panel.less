@@ -128,7 +128,7 @@
             }
             
             .rightOptions{
-                margin: 10px 15px 0 0;
+                margin: 5px 15px 0 0;
                     
                 @media (max-width: 400px) {
                     display: none;
@@ -165,9 +165,17 @@
                         .riksarkivet-header-icon(url('@{theme-img-path}exit_fullscreen.png'), 40px, 30px);
                     }
                     &.linkOldImageViewer{
-                        margin-top: 12px;
+                        margin-top: 6px;
                         margin-right: 12px;
                         text-decoration: underline;
+                        
+                        &:hover {
+                            border: 0;
+                        }
+                    
+                        &:active {
+                            border: 0;
+                        }
                     }
                     
                     &:hover {
