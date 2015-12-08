@@ -1,5 +1,6 @@
 @theme-img-path: '../../../themes/@{theme}/img/';
 @headerLinkColor: #000;
+@buttonBorderColor: #522E2E;
 
 #app{
     .headerPanel{
@@ -32,18 +33,19 @@
             background-position: center center !important;
             width: 40px;
             height: 30px;
+            outline: none;
             // border: 1px solid #522E2E;
             // border-width: 0px 1px 1px 0px;
             // border-radius: 5px;
             
             &:hover {
-                border: 1px solid #522E2E;
+                border: 1px solid @buttonBorderColor;
                 border-width: 1px;
                 border-radius: 4px;
             }
             
             &:active {
-                border: 1px solid #522E2E;
+                border: 1px solid @buttonBorderColor;
                 border-width: 1px 0px 0px 1px;
                 border-radius: 4px;
             }
@@ -74,9 +76,22 @@
                     background-image: url('@{theme-img-path}select.png');
                     background-repeat: no-repeat;
                     background-position: right 5px center;
-                    border: 1px solid #522E2E; //#793A3A;
+                    border: 1px solid @buttonBorderColor;
                     border-width: 0px 1px 1px 0px;
                     border-radius: 4px;
+                    outline: none;
+                    
+                    &:hover {
+                        border: 1px solid @buttonBorderColor;
+                        border-width: 1px;
+                        border-radius: 4px;
+                    }
+                    
+                    &:active {
+                        border: 1px solid @buttonBorderColor;
+                        border-width: 1px 0px 0px 1px;
+                        border-radius: 4px;
+                    }
                 }
  
                 .image-dropdown {
@@ -89,6 +104,7 @@
                     border-radius: 0;
                     cursor: pointer;
                     background: transparent;
+                    outline: none;
                     -webkit-appearance: none;
                     -moz-appearance: none;
                     -o-appearance: none;
