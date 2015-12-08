@@ -5,14 +5,35 @@
                 background: #192533;
                 color: #fff;
                 .header{
-                    font-size: 13px;
+                    @media (min-device-width: 769px)
+			        {
+                        font-size: 13px;
+                    }
+			        @media (max-device-width: 768px)
+			        {
+    			        font-size: 14px;
+		            }
                 }
                 .item{
                     .header{
-                        font-size: 13px;
+                        @media (min-device-width: 769px)
+			            {
+                            font-size: 13px;
+                        }
+			            @media (max-device-width: 768px)
+			            {
+    			            font-size: 14px;
+		                }
                     }
                     .text{
-                        font-size: 14px;
+                        @media (min-device-width: 769px)
+			            {
+                            font-size: 14px;
+                        }
+			            @media (max-device-width: 768px)
+			            {
+    			            font-size: 18px;
+		                }
                     }
                 }
             }
