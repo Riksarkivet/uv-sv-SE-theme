@@ -2,17 +2,30 @@
     .leftPanel{
         .views{
             .treeView{
-			    @media (max-width: 580px)
-			    {
-    			    .tree > li{
-		                margin-bottom: 10px;
-		                font-size: 18px;
-			        }
-		        }
-			    @media (min-width: 581px)
-			    {
-    			    .tree > li{
-		                font-size: 14px;
+                background: #192533;
+                color: #fff;
+                /*background: #F7F7F7;
+                color: #222;*/
+                ul.tree{
+			        @media (min-device-width: 769px)
+			        {
+    			        li{
+                            font-size: 14px;
+			            }
+		            }
+			        @media (max-device-width: 768px) and (min-device-width: 581px)
+			        {
+    			        li{
+                            font-size: 18px;
+                            margin-bottom: 10px;
+			            }
+		            }
+			        @media (max-device-width: 580px)
+			        {
+    			        li{
+                            font-size: 24px;
+                            margin-bottom: 10px;
+                        }
 			        }
 		        }                    		
             }
