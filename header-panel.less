@@ -11,6 +11,11 @@
         background-position: -2px -5px;
         background-size: 140px;
         
+        @media (max-width: 500px) { 
+            background-image: url("../../img/logo-mini.png");
+            background-size: 40px auto;
+        }
+        
         .headerBorder {
             display: block;
             background-image: url('@{theme-img-path}body-header-colorbar.jpg');
@@ -27,14 +32,28 @@
             background-position: center center !important;
             width: 40px;
             height: 30px;
+            // border: 1px solid #522E2E;
+            // border-width: 0px 1px 1px 0px;
+            // border-radius: 5px;
         }
 
         .options{
             .centerOptions{
                 width: auto;
+
+                @media (max-width: 500px) { 
+                    left: 40px !important;
+                }
+                
+                @media (min-width: 501px) and (max-width: 800px) {
+                    left: 140px !important;
+                }
                 
                 .prevOptions {
                     margin-right: 5px;
+                    @media (max-width: 767px) {
+                        display: none;
+                    }
                 }
                 
                 .image-dropdown-options {
@@ -43,14 +62,15 @@
                     background-image: url('@{theme-img-path}select.png');
                     background-repeat: no-repeat;
                     background-position: right 5px center;
-                    border: 1px solid #000;
-                    border-width: 0 2px 0 2px;
+                    border: 1px solid #522E2E; //#793A3A;
+                    border-width: 0px 1px 1px 0px;
+                    border-radius: 4px;
                 }
  
                 .image-dropdown {
                     height: 30px;
                     max-width: 200px; 
-                    padding: 0 25px 0 2px;
+                    padding: 0 25px 0 5px;
                     font-size: 15px;
                     color: #000;
                     border-width: 0;
@@ -74,12 +94,19 @@
                 
                 .nextOptions {
                     margin-left: 5px;
+                    @media (max-width: 767px) {
+                        display: none;
+                    }
                 }
             }
             
             .rightOptions{
                 margin: 0 15px 0 0;
                     
+                @media (max-width: 400px) {
+                    display: none;
+                }
+                
                 a{
                     margin-right: 0;
                     color: @headerLinkColor !important;
@@ -109,6 +136,7 @@
                     }
                     &.linkOldImageViewer{
                         margin-top: 12px;
+                        margin-right: 12px;
                         text-decoration: underline;
                     }
                 }
