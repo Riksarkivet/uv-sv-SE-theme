@@ -40,12 +40,6 @@
             &:hover {
                 border: 1px solid @buttonBorderColor;
                 border-width: 0px 1px 1px 0px;
-
-                // border-top: 1px solid @riksarkivet-header-color;
-                // border-right: 1px solid @buttonBorderColor;
-                // border-bottom: 1px solid @buttonBorderColor;
-                // border-left: 1px solid @riksarkivet-header-color;
-                
                 border-radius: 4px;
             }
             
@@ -134,7 +128,7 @@
             }
             
             .rightOptions{
-                margin: 0 15px 0 0;
+                margin: 10px 15px 0 0;
                     
                 @media (max-width: 400px) {
                     display: none;
@@ -143,34 +137,49 @@
                 a{
                     margin-right: 0;
                     color: @headerLinkColor !important;
+                    outline: none;
+                    border: 1px solid @riksarkivet-header-color;
+                    border-radius: 4px;
                     
                     &:link, &:visited, &:hover, &:active {
                         color: @headerLinkColor !important;
                     }
                     
                     &.settings{
-                        .riksarkivet-header-icon(url('@{theme-img-path}settings.png'), 45px, 40px);
+                        .riksarkivet-header-icon(url('@{theme-img-path}settings.png'), 40px, 30px);
                     }
 
                     &.download{
-                        .riksarkivet-header-icon(url('@{theme-img-path}download.png'), 45px, 40px);
+                        .riksarkivet-header-icon(url('@{theme-img-path}download.png'), 40px, 30px);
                     }
 
                     &.print{
-                        .riksarkivet-header-icon(url('@{theme-img-path}print.png'), 45px, 40px);
+                        .riksarkivet-header-icon(url('@{theme-img-path}print.png'), 40px, 30px);
                     }
 
                     &.fullScreen{
-                        .riksarkivet-header-icon(url('@{theme-img-path}fullscreen.png'), 45px, 40px);
+                        .riksarkivet-header-icon(url('@{theme-img-path}fullscreen.png'), 40px, 30px);
                     }
 
                     &.exitFullscreen{
-                        .riksarkivet-header-icon(url('@{theme-img-path}exit_fullscreen.png'), 45px, 40px);
+                        .riksarkivet-header-icon(url('@{theme-img-path}exit_fullscreen.png'), 40px, 30px);
                     }
                     &.linkOldImageViewer{
                         margin-top: 12px;
                         margin-right: 12px;
                         text-decoration: underline;
+                    }
+                    
+                    &:hover {
+                        border: 1px solid @buttonBorderColor;
+                        border-width: 0px 1px 1px 0px;
+                        border-radius: 4px;
+                    }
+                    
+                    &:active {
+                        border: 1px solid @buttonBorderColor;
+                        border-radius: 4px;
+                        background-position: center 5px !important;
                     }
                 }
             }
