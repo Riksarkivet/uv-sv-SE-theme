@@ -3,8 +3,7 @@
     height: @height;
     padding: 0;
     background: transparent;
-    border: 0px solid @buttonBorderColor;
-    border-radius: 4px;
+    
     box-sizing: border-box;
     
     //IE11 hack to avoid blurry icons on hover
@@ -14,21 +13,31 @@
         height: 100%;
         padding: 0;
         background-position: center center;
+        border: 0px solid @buttonBorderColor;
+        border-radius: 4px;
         
+        &:hover {
+            // border: 1px solid @buttonBorderColor;
+            border-width: 0px 1px 1px 0px;
+            // border-radius: 4px;
+        }
+    
         &:active {
             background-position: 9px 5px !important;
             
-            border: 1px solid @buttonBorderColor;
-            border-radius: 4px;
+            border-width: 1px;
+            
+            // border: 1px solid @buttonBorderColor;
+            // border-radius: 4px;
         }
     }
-    
-    &:hover {
-        // border: 1px solid @buttonBorderColor;
-        border-width: 0px 1px 1px 0px;
-        // border-radius: 4px;
-    }
-    
+    // 
+    // &:hover {
+    //     // border: 1px solid @buttonBorderColor;
+    //     border-width: 0px 1px 1px 0px;
+    //     // border-radius: 4px;
+    // }
+    // 
     &:active
     {
         border-width: 1px;
