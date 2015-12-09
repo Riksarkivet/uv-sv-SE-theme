@@ -29,7 +29,36 @@
         }
         
         a.imageBtn{
-            .riksarkivet-header-button(40px, 30px);
+            &.first{
+                .riksarkivet-icon(url('@{img-path}first.png'), 30px);
+                .riksarkivet-header-button(40px, 30px);
+            }
+
+            &.prev{
+                .riksarkivet-icon(url('@{img-path}prev.png'), 30px);
+                .riksarkivet-header-button(40px, 30px);
+            }
+
+            &.next{
+                .riksarkivet-icon(url('@{img-path}next.png'), 30px);
+                .riksarkivet-header-button(40px, 30px);
+            }
+
+            &.last{
+                .riksarkivet-icon(url('@{img-path}last.png'), 30px);
+                .riksarkivet-header-button(40px, 30px);
+            }
+
+            &.prev-five{
+                .riksarkivet-icon(url('@{img-path}prev_five.png'), 30px);
+                .riksarkivet-header-button(40px, 30px);
+            }
+
+            &.next-five{
+                .riksarkivet-icon(url('@{img-path}next_five.png'), 30px);
+                .riksarkivet-header-button(40px, 30px);
+            }
+            
             // 
             // background-color: @riksarkivet-header-color !important;
             // background-position: center center !important;
