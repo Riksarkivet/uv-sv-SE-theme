@@ -1,15 +1,13 @@
-.riksarkivet-header-icon(@img, @width, @height){
+.riksarkivet-header-button(@width, @height){
     width: @width;
     height: @height;
     padding: 0;
     background: transparent;
-    border: 0px solid @buttonBorderColor;
-    border-radius: 4px;
     box-sizing: border-box;
+    outline: none;
     
     //IE11 hack to avoid blurry icons on hover
     span {
-        .icon-btn(@img, @height);
         position: absolute;
         width: @width;
         height: @height;
@@ -24,17 +22,14 @@
     }
     
     &:hover {
-        // border: 1px solid @buttonBorderColor;
+        border: 1px solid @buttonBorderColor;
         border-width: 0px 1px 1px 0px;
-        // border-radius: 4px;
+        border-radius: 4px;
     }
-    
-    // &:active
-    // {
-    //     border-width: 1px;
-    //     // border: 1px solid @buttonBorderColor;
-    //     // border-radius: 4px;
-    //     // background-position: center 5px !important;
-    // }
 }
 
+.riksarkivet-icon(@img, @height) {
+    span {
+        .icon-btn(@img, @height);
+    }
+}
