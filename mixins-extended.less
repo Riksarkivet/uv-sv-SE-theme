@@ -1,7 +1,11 @@
 .riksarkivet-header-icon(@img, @width, @height){
-    .icon-btn(@img, @height);
     width: @width;
     height: @height;
-    background-position: center center;
     padding: 0;
+    
+    span {
+        .icon-btn(@img, @height);
+        background-position: center center;
+    }
 }
+
