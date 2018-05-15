@@ -1,0 +1,14 @@
+{
+  "name": "uv-sv-se-theme",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riksarkivet/uv-sv-SE-theme.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Riksarkivet/uv-sv-SE-theme/issues"
+  },
+  "homepage": "https://github.com/Riksarkivet/uv-sv-SE-theme#readme"
+}
