@@ -3,7 +3,7 @@
 @headerLinkColor: #000;
 @buttonBorderColor: #522E2E;
 
-.uv.sv-se {
+.uv {
     .headerPanel{       
         height: 48px;
         
@@ -56,10 +56,6 @@
             &.disabled{
                 opacity: 1.0;
                 filter: alpha(opacity=100);
-            }
-
-            i {
-                background-color: transparent;
             }
 
         }
@@ -147,8 +143,14 @@
                 @media (max-width: 400px) {
                     display: none;
                 }
-                
-                a{
+
+                button {
+                    .uv-icon-settings {
+                        .icon-btn-2('@{theme-img-path}settings.png');
+                      }
+                }
+
+                a {
                     margin-right: 0;
                     color: @headerLinkColor !important;
                     outline: none;
@@ -159,11 +161,6 @@
                         color: @headerLinkColor !important;
                     }
                     
-                    &.settings{
-                        .riksarkivet-icon('@{theme-img-path}settings.png', 30px);
-                        .riksarkivet-header-button(40px, 30px);
-                    }
-
                     &.download{
                         .riksarkivet-icon('@{theme-img-path}download.png', 30px);
                         .riksarkivet-header-button(40px, 30px);
