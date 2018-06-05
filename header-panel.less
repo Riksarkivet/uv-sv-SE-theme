@@ -143,11 +143,27 @@
                     display: none;
                 }
 
+                margin-top: 5px;
+
                 button {
                     .uv-icon-settings {
-                        .icon-btn-2('@{theme-img-path}settings.png');
+                        background-image: data-uri('@{theme-img-path}settings.png');
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        height: 20px;
+                        vertical-align: middle;
+                        width: 20px;
+                        margin: 0px 5px;
+                        cursor: pointer;
                       }
-                }
+                      &:hover {
+                        background: transparent;
+                        background-color: transparent;
+                        border: 1px solid #522e2e;
+                        border-width: 0px 1px 1px 0px;
+                        border-radius: 4px;                            
+                    }
+            }
 
                 a {
                     margin-right: 0;
