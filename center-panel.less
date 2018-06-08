@@ -11,7 +11,19 @@
         .content{
             #viewer {
                 margin: 0;
-                
+                .goHome{
+                    cursor: pointer !important;
+                    background-image: data-uri('@{theme-img-path}home.png') !important;
+                    width: 28px;
+                    height: 28px;
+                    margin: 3px !important;
+                    img {
+                        display: none;
+                    }
+                    &:focus {
+                      .tab-focus();
+                    }
+                }
                 .paging.btn {
                     background: transparent;
                     background-repeat: no-repeat;
