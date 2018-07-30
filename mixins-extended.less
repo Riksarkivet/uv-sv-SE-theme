@@ -1,13 +1,14 @@
 .riksarkivet-header-button(@width, @height){
     width: @width;
     height: @height;
-    background: transparent;
+    margin-right: 3px;
     background-color: transparent;
     background-image: none;
     box-sizing: border-box;
     outline: none;
     
     i {
+        background-position-x: center;
         background-color: transparent;
         &:hover {
             background-color: transparent;                
@@ -41,14 +42,20 @@
         border-width: 0px 1px 1px 0px;
         border-radius: 4px;
     }
-    
+
+    .focus-border();
     &:focus {
-        border-width: 0;
+        margin-top: -1px;
     }
 }
 
-.riksarkivet-icon(@img, @height) {
-    span {
-        .icon-btn(@img, @height);
+.focus-border() {
+    &:focus {
+        outline: none;
+        border: 1px solid @buttonBorderColor;
+        border-radius: 4px;
+    }
+    &::-moz-focus-inner {
+        border:0;
     }
 }
